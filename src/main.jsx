@@ -20,9 +20,9 @@ const router = createBrowserRouter(
       path: "/",
       element: <App />,
       children: [
-        { path: "/", element: <Home /> },
+        { path: "/Blog/", element: <Home /> },
         {
-          path: "/login",
+          path: "/Blog/login",
           element: (
             <AuthLayout authentication={false}>
               <Login />
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/signup",
+          path: "/Blog/signup",
           element: (
             <AuthLayout authentication={false}>
               <SignUp />
@@ -38,7 +38,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/all-posts",
+          path: "/Blog/all-posts",
           element: (
             <AuthLayout authentication>
               {" "}
@@ -47,7 +47,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/add-post",
+          path: "/Blog/add-post",
           element: (
             <AuthLayout authentication>
               {" "}
@@ -56,7 +56,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/edit-post/:slug",
+          path: "/Blog/edit-post/:slug",
           element: (
             <AuthLayout authentication>
               {" "}
@@ -65,13 +65,13 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/post/:slug",
+          path: "/Blog/post/:slug",
           element: <Post />,
         },
       ],
     },
   ],
-  { baseName: "/Blog/" }
+  { baseName: "/Blog" }
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
