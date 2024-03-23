@@ -20,9 +20,9 @@ const router = createBrowserRouter(
       path: "/",
       element: <App />,
       children: [
-        { path: "/Blog/", element: <Home /> },
+        { path: "/", element: <Home /> },
         {
-          path: "/Blog/login",
+          path: "/login",
           element: (
             <AuthLayout authentication={false}>
               <Login />
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/Blog/signup",
+          path: "/signup",
           element: (
             <AuthLayout authentication={false}>
               <SignUp />
@@ -38,7 +38,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/Blog/all-posts",
+          path: "/all-posts",
           element: (
             <AuthLayout authentication>
               {" "}
@@ -47,7 +47,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/Blog/add-post",
+          path: "/add-post",
           element: (
             <AuthLayout authentication>
               {" "}
@@ -56,7 +56,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/Blog/edit-post/:slug",
+          path: "/edit-post/:slug",
           element: (
             <AuthLayout authentication>
               {" "}
@@ -65,7 +65,7 @@ const router = createBrowserRouter(
           ),
         },
         {
-          path: "/Blog/post/:slug",
+          path: "/post/:slug",
           element: <Post />,
         },
       ],
