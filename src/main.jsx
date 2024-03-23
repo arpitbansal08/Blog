@@ -71,7 +71,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { baseName: "/Blog" }
+  { baseName: "/Blog/" }
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
