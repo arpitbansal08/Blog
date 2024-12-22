@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login as authLogin } from "../store/authSlice";
 
-const SignUp = () => {
+const Signup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [error, setError] = useState("");
@@ -93,4 +93,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;

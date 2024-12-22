@@ -9,7 +9,7 @@ import Home from "../pages/Home.jsx";
 import Post from "../pages/Post.jsx";
 import App from "./App.jsx";
 import Login from "./components/Login.jsx";
-import SignUp from "./components/Signup.jsx";
+import Signup from "./components/Signup.jsx";
 import { AuthLayout } from "./components/index.js";
 import "./index.css";
 import store from "./store/store.js";
@@ -33,7 +33,7 @@ const router = createBrowserRouter(
           path: "/signup",
           element: (
             <AuthLayout authentication={false}>
-              <SignUp />
+              <Signup />
             </AuthLayout>
           ),
         },
